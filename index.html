@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
@@ -20,8 +21,8 @@
 <body>
     <header class="header">
         <div class="container row">
-            <div class="logo">Sai Kitchen</div>
-            <ul class="nav-list">
+            <div class="logo animate__animated animate__fadeInDown">Sai Kitchen</div>
+            <ul class="nav-list animate__animated animate__fadeInDown">
                 <li class="nav-list__item">Home</li>
                 <li class="nav-list__item">Order</li>
                 <li class="nav-list__item">Contact</li>
@@ -29,16 +30,21 @@
                 <li class="nav-list__item">Testimonials</li>
                 <li class="nav-list__item"></li>
             </ul>
-            <div class="header-icons">
+            <div class="header-icons animate__animated animate__fadeInDown">
                 <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram-square"></i></a>
                 <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
                 <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="burger-menu header-icons animate__animated animate__fadeInDown">
+                <div class="burger-menu--bar"></div>
+                <div class="burger-menu--bar"></div>
+                <div class="burger-menu--bar"></div>
             </div>
         </div>
     </header>
     <main>
         <section class="hero">
-            <div class="container row">
+            <div class="container">
                 <div class="hero__title">
                     <h1>Tummy Heaven</h1>
                 </div>
