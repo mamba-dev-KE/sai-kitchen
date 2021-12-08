@@ -16,41 +16,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/styles.css">
+    <script defer src="./scripts/script.js"></script>
 </head>
 
 <body>
     <header class="header">
         <div class="container row">
             <div class="logo animate__animated animate__fadeInDown">Sai Kitchen</div>
-            <ul class="nav-list animate__animated animate__fadeInDown">
-                <li class="nav-list__item">Home</li>
-                <li class="nav-list__item">Order</li>
-                <li class="nav-list__item">Contact</li>
-                <li class="nav-list__item">Cake Gallery</li>
-                <li class="nav-list__item">Testimonials</li>
-                <li class="nav-list__item"></li>
-            </ul>
+            <nav class="nav">
+                <ul class="nav-list animate__animated animate__fadeInDown">
+                    <li class="nav-list__item">Home</li>
+                    <li class="nav-list__item">Order</li>
+                    <li class="nav-list__item">Contact</li>
+                    <li class="nav-list__item">Cake Gallery</li>
+                    <li class="nav-list__item">Testimonials</li>
+                    <li class="nav-list__item"></li>
+                </ul>
+            </nav>
             <div class="header-icons animate__animated animate__fadeInDown">
                 <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram-square"></i></a>
                 <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
                 <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
             </div>
-            <div class="burger-menu header-icons animate__animated animate__fadeInDown">
+            <button class="burger-menu header-icons animate__animated animate__fadeInDown">
                 <div class="burger-menu--bar"></div>
                 <div class="burger-menu--bar"></div>
                 <div class="burger-menu--bar"></div>
-            </div>
+            </button>
         </div>
     </header>
     <main>
         <section class="hero">
-            <div class="container">
+            <div class="container row">
                 <div class="hero__title">
                     <h1>Tummy Heaven</h1>
                 </div>
-                <div class="hero__image">
-                    <h2>We are cake</h2>
-                </div>
+                <picture class="hero__image">
+                    <img src="./images/cake-1.jpg" alt="" height="800" width="800">
+                </picture>
             </div>
         </section>
     </main>
