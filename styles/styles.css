@@ -163,6 +163,10 @@ img {
 	justify-content: space-evenly;
 	margin-top: var(--font-size-fluid-2);
 }
+
+.hero__btns > * {
+	margin-left: 0.5em;
+}
 .hero__btn {
 	padding: 1em 2em;
 	border: none;
@@ -226,6 +230,7 @@ img {
 
 	.hero__call-to-action {
 		grid-area: call-to-action;
+		align-self: end;
 	}
 
 	.hero__image {
