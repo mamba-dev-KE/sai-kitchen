@@ -49,6 +49,7 @@ img {
 	position: fixed;
 	width: 100%;
 	top: 0;
+	z-index: var(--layer-2);
 }
 
 .logo {
@@ -67,7 +68,6 @@ img {
 	height: 100vh;
 	width: 70vw;
 	background: black;
-	z-index: var(--layer-3);
 	transition: transform 0.4s ease-in-out;
 }
 
@@ -86,6 +86,7 @@ img {
 
 .nav.active {
 	transform: translateX(-100%);
+	z-index: var(--layer-2);
 }
 
 .nav.active + .container__backdrop {
@@ -117,6 +118,7 @@ img {
 	transform-origin: 21px;
 	transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }
+
 .burger-menu--bar + .burger-menu--bar {
 	margin-top: var(--size-1);
 }
@@ -140,7 +142,7 @@ img {
 	/* min-height: 100vh; */
 	/* background-image: var(--gradient-7); */
 	background-color: var(--complementary-color);
-	padding: 5em 0 4em 0;
+	padding: 1em 0 3em 0;
 	margin: 4rem 0;
 }
 
@@ -154,9 +156,6 @@ img {
 	width: 100%;
 	margin: 0 auto;
 	filter: saturate(1.5);
-	/* block-size: 100%;
-
-	/* align-self: stretch; */
 }
 
 .hero__btns {
@@ -210,6 +209,10 @@ img {
 		font-size: var(--font-size-2);
 		font-weight: var(--font-weight-5);
 		color: #555454;
+	}
+
+	.hero {
+		padding: 5em 0 4em 0;
 	}
 
 	.hero__row {
