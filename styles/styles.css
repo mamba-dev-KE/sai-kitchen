@@ -140,7 +140,7 @@ img {
 	/* min-height: 100vh; */
 	/* background-image: var(--gradient-7); */
 	background-color: var(--complementary-color);
-	padding: 18em 0 2em 0;	
+	padding: 18em 0 2em 0;
 	margin: 5rem 0;
 }
 
@@ -201,7 +201,8 @@ img {
 		background-color: white;
 		padding: 1em 0;
 		border-radius: var(--radius-6);
-		box-shadow: var(--shadow-2);
+		box-shadow: var(--shadow-3);
+		max-width: 34rem;
 	}
 	.nav-list__item {
 		margin: 0 0 0 1em;
