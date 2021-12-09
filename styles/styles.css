@@ -10,8 +10,6 @@
 }
 
 :root {
-	/* font-size: 10px; */
-
 	/* COLORS */
 	--light-gray: #454545;
 	--primary-color: #ff9d87;
@@ -22,7 +20,6 @@
 
 body {
 	font-family: var(--font-sans);
-	/* background-image: var(--gradient-14); */
 }
 img {
 	max-width: 100%;
@@ -38,7 +35,7 @@ img {
 .row {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 }
 
 /* HEADER STYLES */
@@ -93,10 +90,6 @@ img {
 	opacity: 1;
 }
 
-.header-icons {
-	margin-left: var(--size-4);
-}
-
 .fab {
 	color: var(--light-gray);
 	font-size: var(--font-size-4);
@@ -123,7 +116,7 @@ img {
 	margin-top: var(--size-1);
 }
 
-/* .container__backdrop {
+.container__backdrop {
 	content: "";
 	position: fixed;
 	top: 0;
@@ -135,12 +128,13 @@ img {
 	z-index: 0;
 	opacity: 0;
 	transition: opacity 0.5s ease-in-out;
-} */
+}
 
 /* HERO STYLES */
 .hero {
-	/* min-height: 100vh; */
-	/* background-image: var(--gradient-7); */
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
 	background-color: var(--complementary-color);
 	padding: 1em 0 3em 0;
 	margin: 4rem 0;
@@ -235,7 +229,7 @@ img {
 
 	.hero__image {
 		grid-area: hero-image;
-		align-self: end;
+		align-self: stretch;
 	}
 
 	.hero__btns {
@@ -245,7 +239,7 @@ img {
 	}
 
 	.hero__image > img {
-		width: 85%;
+		width: 100%;
 		object-fit: cover;
 	}
 }
