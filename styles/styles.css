@@ -201,7 +201,7 @@ img {
 		background-color: white;
 		padding: 1em 0;
 		border-radius: var(--radius-6);
-		box-shadow: var(--shadow-3);
+		box-shadow: var(--shadow-4);
 		max-width: 34rem;
 	}
 	.nav-list__item {
